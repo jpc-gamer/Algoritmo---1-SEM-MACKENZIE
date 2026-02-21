@@ -1,0 +1,39 @@
+Bmenor = float(input("Digite o valor da base menor: "))
+Bmaior = float(input("Digite o valor da base maior: "))
+h = float(input("Digite a altura do tronco da pirâmide: "))
+
+volume = h / 3 * (Bmaior * 2 + Bmenor + (Bmaior * Bmenor) * 0.5)
+
+print(f"O volume do tronco da pirâmide é: {volume}")
+
+#---------------------------------#
+
+horas = float(input("Digite o valor em horas: "))
+minutos = horas * 60
+print(f"O valor em minutos é: {minutos}")
+
+#---------------------------------#
+
+valorPrestacao = float(input("Digite o valor da prestação: "))
+multa = float(input("Digite o percentual da multa (%): "))
+qntDias = int(input("Digite a quantidade de dias atrasados: "))
+
+prestacao = valorPrestacao + (valorPrestacao * (multa / 100) * qntDias)
+
+print(f"O valor da prestação com multa é: {prestacao:.2f}")
+
+#---------------------------------#
+
+import math
+
+graus = float(input("Digite o valor do ângulo em graus: "))
+
+radianos = math.radians(graus)
+
+seno = math.sin(radianos)
+cosseno = math.cos(radianos)
+tangente = math.tan(radianos)
+
+print(f"Seno: {seno}")
+print(f"Cosseno: {cosseno}")
+print(f"Tangente: {tangente}")
