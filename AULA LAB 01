@@ -1,0 +1,51 @@
+valor_metros = int(input('Insira o valor em metros: '))
+
+conversao = valor_metros * 1000
+
+print(valor_metros, 'metros', 'corresponde a', conversao, 'milímetros') 
+
+------------------------------------------
+
+valor_compra = float((input ('Digite o valor da compra: ')))
+
+valor_inteiro = ( valor_compra // 3 ) 
+
+valor_total = valor_compra - (valor_inteiro) * 2
+
+
+print ('Carlos deverá pagar: ', valor_inteiro, 'André deverá pagar: ', valor_inteiro, 'Felipe deverá pagar: ', valor_total )
+
+
+
+
+---------------------------------------------------------------
+
+preco_produto = int(input('Digite o preço do produto: '))
+
+nota_100 = preco_produto // 100
+resto_100 = preco_produto - (nota_100 * 100)
+nota_50 = resto_100 // 50
+resto_50 = resto_100 - (nota_50 * 50)
+nota_20 = resto_50 // 20
+resto_20 = resto_50 - (nota_20 * 20)
+nota_10 = resto_20 // 10
+resto_10 = resto_20 - (nota_10 * 10)
+nota_5 = resto_10 // 5
+resto_5 = resto_10 - (nota_5 * 5)
+nota_2 = resto_5 // 2
+resto_2 = resto_5 - (nota_2 * 2)
+nota_1 = resto_2 // 1 
+
+
+
+print('Notas de 100: ', nota_100,
+      '\n Notas de 50: ', nota_50,
+      '\n Notas de 20: ', nota_20,
+      '\n Notas de 10: ', nota_10 ,
+      '\n Notas de 5: ', nota_5,
+      '\n Notas de 2: ', nota_2,
+      '\n Notas de 1: ', nota_1)
+
+    
+
+-----------------
