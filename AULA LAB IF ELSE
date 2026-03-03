@@ -1,0 +1,81 @@
+tipo_voo = input("Qual é o turno da viagem? Digite (D) para diurno ou N para noturno? ")
+qntd_pessoas = int(input("Qual a quantidade de pessoas? "))
+
+voo_diurno = qntd_pessoas * 2200
+voo_noturno = qntd_pessoas * 1800
+
+if (tipo_voo == "D"):
+    
+    print ("O valor do pacote é: R$", voo_diurno)
+    
+else:
+    print ("O valor do pacote é: R$ ", voo_noturno)
+
+-----------------------------------------------------------------------
+
+idade = int(input("Digite sua idade: "))
+acompanhado = input("Está acompanhado dos pais? (S/N): ")
+estudante = input("É estudante universitário? (S/N): ")
+
+if (idade < 12 and acompanhado == "S"):
+    print("Parabéns, você tem direito a 30% de desconto ")
+elif(estudante == "S" and idade < 25):
+     print("Parabéns, você tem direito a 30% de desconto ")
+elif(idade > 60):
+    print("Parabéns, você tem direito a 30% de desconto ")
+else:
+    print ("Você não tem direito a desconto")
+
+-------------------------------------------------------------------------
+
+num = int(input("Digite um número inteiro com 3 digitos: "))
+
+dezena = (num % 100) // 10
+
+if (num < 100 or num > 999):
+    print ("Valor fora do intervalo")    
+elif(confere_algarismo > 1 and dezena % 2 == 0):
+    print("O número é par")
+else:
+    print ("O número é ímpar")
+    
+---------------------------------------------------------------------------
+num = int(input("Digite um número: "))
+
+if(num < 0):
+    print("O número é negativo")
+else:
+    print ("O número é positivo")
+---------------------------------------------------------------------
+num_1 = int(input("Digite o primeiro número: "))
+num_2 = int(input("Digite o segundo número: "))
+
+if (num_1 > num_2):
+    print(num_1, "maior que ", num_2)
+else:
+    print(num_2, "maior que ", num_1)
+-------------------------------------------------------------------
+nome1 = input("Digite o primeiro nome: ")
+nome2 = input("Digite o segundo nome: ")
+
+n1 = nome1.lower()
+n2 = nome2.lower()
+
+print("\nOrdem alfabética:")
+
+if n1 < n2:
+    print(nome1)
+    print(nome2)
+else:
+    print(nome2)
+    print(nome1)
+
+
+
+
+
+    
+    
+
+
+----------------
