@@ -1,0 +1,30 @@
+lata = int(input("Quantidade de latas de 350 ml: "))
+garrafa600 = int(input("Quantidade de garrafas de 600 ml: "))
+garrafa2l = int(input("Quantidade de garrafas de 2 litros: "))
+
+litros = (lata * 0.35) + (garrafa600 * 0.6) + (garrafa2l * 2)
+total_pagar = litros * 9.50
+
+print("Total de litros comprados:", litros)
+print("Total a pagar: R$", total_pagar)
+
+------------------------------
+
+distancia = float(input("Digite a distância em km: "))
+tempo = float(input("Digite o tempo em horas: "))
+
+velocidade_media = distancia / tempo
+
+print("Velocidade média:", velocidade_media, "km/h")
+
+-----------------------------
+
+a = int(input("Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+c = int(input("Digite o terceiro número: "))
+
+soma_quadrados = a*a + b*b + c*c
+quadrado_soma = (a + b + c) * (a + b + c)
+
+print("Soma dos quadrados:", soma_quadrados)
+print("Quadrado da soma:", quadrado_soma)
