@@ -1,0 +1,73 @@
+ex02
+telefone = input('Telefonou para a vítima? (S/N)')
+local = input('Esteve no local do crime? (S/N)')
+morar_perto = input('Mora perto da vítima? (S/N)')
+dever = input('Devia para a vítima (S/N)? ')
+trabalhar = input('Já trabalhou com a vítima? (S/N)? ')
+
+cont = 0 
+
+if( telefone == 'S'):
+    cont = cont+1
+if ( local == 'S'):
+    cont = cont+1
+if ( morar_perto == 'S'):
+    cont = cont+1
+if ( dever == 'S'):
+    cont = cont+1
+if( trabalhar == 'S'):
+    cont = cont+1
+
+if ( cont == 5):
+    print ( 'Assasino')
+elif (cont == 2):
+    print('Suspeita')
+elif ( cont >= 3 ):
+    print('Cúmplice')
+else:
+    print ('Inocente')
+
+-------------------------------------------------------------------------------------
+
+ex03
+lado_1 = int(input('Digite o primeiro lado: '))
+lado_2 = int(input('Digite o segundo lado: '))
+lado_3 = int(input('Digite o terceiro lado: '))
+
+if (lado_1 > lado_2 and lado_3):
+    print('Os lados não formam um triângulo')
+elif(lado_2 > lado_1 and lado_3):
+     print('Os lados não formam um triângulo')
+elif(lado_3 > lado_1 and lado_1):
+     print('Os lados não formam um triângulo')
+elif (lado_1 != lado_2 != lado_3):
+    print('Triângulo escaleno')
+elif (lado_1 == lado_2 == lado_3):
+    print('Triângulo equilátero')
+else:
+    print('Triângulo isósceles')
+
+-----------------------------------------------------------------------------------
+
+ex04
+a = int(input('Digite o valor da incógnita "a": '))
+b = int(input('Digite o valor da incógnita "b": '))
+c = int(input('Digite o valor da incógnita "c": '))
+
+delta = b**2 - 4*a*c
+
+bhaskara_positivo = (-b + (delta)**0.5) / (2*a)
+
+bhaskara_negativo = (-b - (delta)**0.5) / (2*a)
+
+if(delta > 0):
+    print(bhaskara_positivo, bhaskara_negativo)
+elif(delta == 0 and bhaskara_positivo >0):
+    print(bhaskara_positivo)
+elif(delta ==0 and bhaskara_negativo >0):
+    print(bhaskara_negativo)
+else:
+    print('A equação não tem raízes reais ')
+
+
+
