@@ -1,0 +1,24 @@
+distancia = float(input())
+serie = int(input())
+
+if serie == 100:
+    if distancia <= 1.4:
+        tamanho = 32
+    elif distancia <= 2.6:
+        tamanho = 37
+    else:
+        tamanho = 42
+
+elif serie == 200:
+    if distancia <= 2.8:
+        tamanho = 42
+    elif distancia <= 3.6:
+        tamanho = 50
+    else:
+        tamanho = 61
+
+else:
+    print("Esta série não existe")
+
+if serie == 100 or serie == 200:
+    print(tamanho)
