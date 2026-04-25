@@ -1,0 +1,8 @@
+lista_original = [1, 2, 3, 4]
+lista_nova = []
+
+# Começa do último índice até o zero
+for i in range(len(lista_original) - 1, -1, -1):
+    lista_nova.append(lista_original[i]) 
+
+NAO USAR REVERSE, LOGICA NA MAO 
