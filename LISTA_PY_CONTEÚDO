@@ -1,0 +1,116 @@
+conteudo = """
+LISTAS EM PYTHON
+
+O que é uma lista:
+Uma lista é uma coleção ordenada e mutável de elementos.
+
+Exemplos:
+lista = [1, 2, 3, 4]
+nomes = ["Ana", "João", "Maria"]
+misto = [10, "texto", True]
+
+Indexação:
+lista = ["a", "b", "c"]
+lista[0] -> "a"
+lista[-1] -> "c"
+
+Slicing:
+lista = [0, 1, 2, 3, 4, 5]
+lista[1:4] -> [1, 2, 3]
+lista[:3] -> [0, 1, 2]
+lista[::2] -> [0, 2, 4]
+
+Modificar:
+lista = [1, 2, 3]
+lista[1] = 99
+
+Métodos:
+append(10)
+insert(1, 50)
+extend([7, 8])
+
+Remover:
+remove(2)
+pop()
+pop(0)
+del lista[1]
+
+Verificação:
+3 in lista
+
+Tamanho:
+len(lista)
+
+Ordenação:
+lista.sort()
+sorted(lista)
+
+Loop:
+for item in lista:
+    print(item)
+
+Com índice:
+for i, valor in enumerate(lista):
+    print(i, valor)
+
+List comprehension:
+[x**2 for x in range(5)]
+[x for x in range(10) if x % 2 == 0]
+
+Lista aninhada:
+matriz = [[1, 2], [3, 4]]
+
+Cópia:
+b = a.copy()
+
+----------------------------------------
+IMPLEMENTANDO SEM FUNÇÕES PRONTAS
+----------------------------------------
+
+Soma (sem sum):
+lista = [1, 2, 3, 4, 5]
+
+soma = 0
+for numero in lista:
+    soma = soma + numero
+
+print(soma)
+
+Maior valor (sem max):
+lista = [10, 5, 20, 8]
+
+maior = lista[0]
+for numero in lista:
+    if numero > maior:
+        maior = numero
+
+print(maior)
+
+Menor valor (sem min):
+lista = [10, 5, 20, 8]
+
+menor = lista[0]
+for numero in lista:
+    if numero < menor:
+        menor = numero
+
+print(menor)
+
+Versão segura (lista vazia):
+lista = []
+
+if len(lista) == 0:
+    print("Lista vazia")
+else:
+    maior = lista[0]
+    for numero in lista:
+        if numero > maior:
+            maior = numero
+
+    print(maior)
+"""
+
+
+    arquivo.write(conteudo)
+
+print("Arquivo criado com sucesso!")
